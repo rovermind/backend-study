@@ -5,6 +5,17 @@ var router = require("./router");
 var app = http.createServer(function(req, res){
 	console.log(req.url);
 
+	if (req.url === "/") {
+		res.write("home");
+		res.end();
+	}
+
+	var datailId = req.url.replace("/", "");
+	if (detailId > 0) {
+		res.write(detailId);
+		res.end();
+	}
+
 	router.home(req, res);
 	router.detail(req, res);
 
