@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rovermind/backend-study/issues"
   },
-  "homepage": "https://github.com/rovermind/backend-study#readme"
+  "homepage": "https://github.com/rovermind/backend-study#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
